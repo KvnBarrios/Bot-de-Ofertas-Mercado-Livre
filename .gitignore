@@ -7,3 +7,5 @@ __pycache__/
 chromedriver.exe
 .idea/Bot_Oferta_ML.iml
 *.xlsx
+utils/__pycache__/__init__.cpython-38.pyc
+utils/__pycache__/support.cpython-38.pyc
