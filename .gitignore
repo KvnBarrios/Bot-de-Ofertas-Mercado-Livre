@@ -9,3 +9,4 @@ chromedriver.exe
 *.xlsx
 utils/__pycache__/__init__.cpython-38.pyc
 utils/__pycache__/support.cpython-38.pyc
+utils/__init__.py
