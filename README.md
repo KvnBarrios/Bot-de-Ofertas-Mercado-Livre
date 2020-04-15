@@ -19,7 +19,7 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 4 - Instalar o ChromeDriver
-Baixe o ChromeDriver no site https://chromedriver.chromium.org/downloads(verifique a versão do seu Chrome instalado em sua maquina), após isso, insira o chromedriver.exe na pasta raiz do projeto.
+Baixe o ChromeDriver no site https://chromedriver.chromium.org/downloads (verifique a versão do seu Chrome instalado em sua maquina), após isso, insira o chromedriver.exe na pasta raiz do projeto.
 
 ## planilha
 
