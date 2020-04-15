@@ -40,11 +40,11 @@ for page in range(1):
         row2 += 1
 
     for discount in driver.find_elements_by_class_name('promotion-item__discount'):
-        worksheet.write(row3, 3, discount.text)
+        worksheet.write(row3, 3, discount.text[0:3])
         row3 += 1
 
     for link in driver.find_elements_by_class_name('promotion-item__link-container'):
-        worksheet.write_url(row4, 4, link.get_attribute('href'), string='Link Aqui')
+        worksheet.write_url(row4, 4, link.get_attribute('href'), string='Link')
         row4 += 1
 
     driver.get(f'https://www.mercadolivre.com.br/ofertas?page={page + 2}')
