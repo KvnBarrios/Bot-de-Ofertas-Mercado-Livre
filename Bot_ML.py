@@ -21,7 +21,7 @@ driver.get("https://www.mercadolivre.com.br/ofertas")
 pages = int(
     driver.find_element_by_xpath('/html/body/main/div/div[2]/div[2]/div/ul/li[12]/a').get_attribute('innerHTML'))
 
-for page in range(1):
+for page in range(pages):
     for names in driver.find_elements_by_class_name('promotion-item__title'):
         worksheet.write(row, 0, names.get_attribute('innerHTML'))
         row += 1
