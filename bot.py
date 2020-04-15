@@ -6,10 +6,11 @@ from selenium.webdriver.common.by import By
 from utils.support import wait_for_element
 from selenium.webdriver.chrome.options import Options
 from art import *
+from datetime import date
 
 byebye = text2art("KvnBarrios")
 
-workbook = xlsxwriter.Workbook('ofertas2.xlsx')
+workbook = xlsxwriter.Workbook(f'ofertas_dia_{date.today()}.xlsx')
 worksheet = workbook.add_worksheet('Ofertas do MercadoLivre')
 row = row1 = row2 = row3 = row4 = 1
 
