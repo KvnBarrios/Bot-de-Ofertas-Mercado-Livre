@@ -9,13 +9,19 @@ workbook = xlsxwriter.Workbook('ofertas.xlsx')
 worksheet = workbook.add_worksheet('Ofertas do MercadoLivre')
 row = row1 = row2 = row3 = row4 = 0
 
+worksheet.write(0, 0, 'Produtos')
+worksheet.write(0, 1, 'Preço')
+worksheet.write(0, 2, 'Preço anterior')
+worksheet.write(0, 3, 'Desconto')
+worksheet.write(0, 4, 'Link')
+
 driver: WebDriver = webdriver.Chrome()
 driver.get("https://www.mercadolivre.com.br/ofertas")
 
 pages = int(
     driver.find_element_by_xpath('/html/body/main/div/div[2]/div[2]/div/ul/li[12]/a').get_attribute('innerHTML'))
 
-for page in range(pages + 1):
+for page in range(pages):
     for names in driver.find_elements_by_class_name('promotion-item__title'):
         worksheet.write(row + 1, 0, names.get_attribute('innerHTML'))
         row += 1
