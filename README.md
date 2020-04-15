@@ -1,5 +1,5 @@
 # bot de ofertas do Mercado Livre
-Utilizando Python e Selenium, esse projeto consiste em varrer as paginas de ofertas do Mercado Livre pegando as informações dos produtos, como nome, preço, preço anterior, desconto e link do mesmo, e inserindo os dados em uma planilha esses dados.
+Utilizando Python e Selenium, esse projeto consiste em varrer as paginas de ofertas do Mercado Livre pegando as informações dos produtos como nome, preço, preço anterior, desconto e link do mesmo, e inserindo os dados em uma planilha.
 
 
 
