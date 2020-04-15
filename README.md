@@ -23,7 +23,7 @@ Baixe o ChromeDriver no site https://chromedriver.chromium.org/downloads (verifi
 
 ## planilha
 
-A planilha será criada na pasta raiz do projeto, já contendo cabeçalho e seus respectivos dados
+A planilha será criada na pasta raiz do projeto com seu respectivo dia, já contendo cabeçalho e seus respectivos dados
 
 
 
